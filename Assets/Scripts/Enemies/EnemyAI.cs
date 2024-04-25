@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Game.Utils;
-using UnityEditor.Experimental.GraphView;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -20,7 +19,6 @@ public class EnemyAI : MonoBehaviour
 
     private enum State
     {
-        //Idle,
         Roaming
     }
 
@@ -42,8 +40,6 @@ public class EnemyAI : MonoBehaviour
         switch (state)
         {
             default:
-            //case State.Idle:
-                //break;
             case State.Roaming:
                 roamingTime -= Time.deltaTime;
                 if (roamingTime < 0)

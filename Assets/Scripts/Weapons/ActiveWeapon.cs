@@ -15,7 +15,10 @@ public class ActiveWeapon : MonoBehaviour
 
 	public void Update()
 	{
-		FollowMousePosition();
+		if (!PauseManager.isMenuPaused)
+		{
+		FollowMousePosition();	
+		}
 	}
 	public Sword GetActiveWeapon()
 	{

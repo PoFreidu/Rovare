@@ -4,28 +4,37 @@ using UnityEngine;
 
 public class SwordVisual : MonoBehaviour
 {
-    [SerializeField] private Sword sword;
+	[SerializeField] private Sword sword;
 
-    private Animator animator;
-    private const string ATTACK = "Attack";
+	private Animator animator;
+	private const string ATTACK = "Attack";
 
-    private void Awake()
-    {
-        animator = GetComponent<Animator>();
-    }
+	private void Awake()
+	{
+		animator = GetComponent<Animator>();
+	}
 
-    private void Start()
-    {
-        sword.OnSwordAttack += Sword_OnSwordAttack;
-    }
+	private void Start()
+	{
+		if (!PauseManager.isMenuPaused)
+		{
+		sword.OnSwordAttack += Sword_OnSwordAttack;	
+		}
+	}
 
-    private void Sword_OnSwordAttack(object sender, System.EventArgs e)
-    {
-        animator.SetTrigger(ATTACK);
-    }
+	private void Sword_OnSwordAttack(object sender, System.EventArgs e)
+	{
+		if (!PauseManager.isMenuPaused)
+		{
+		animator.SetTrigger(ATTACK);	
+		}
+	}
 
-    public void EndTriggerAttackEffectAnimation()
-    {
-        sword.AttackColliderTurnOff();
-    }
+	public void EndTriggerAttackEffectAnimation()
+	{
+		if (!PauseManager.isMenuPaused) 
+		{
+		sword.AttackColliderTurnOff();	
+		}
+	}
 }
