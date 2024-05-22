@@ -1,0 +1,1320 @@
+fileFormatVersion: 2
+guid: 6f433d8ad942c6742b80926161ffa307
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet-001attack _1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 285
+        width: 24
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082ece13061b234408f432d4974c0975
+      internalID: -834960871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _2
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 280
+        width: 35
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ecd68686405154cacc430ccb53317d
+      internalID: -457786684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 285
+        width: 32
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79376dff0b890044cb3adaf2f3dc7a17
+      internalID: -204213448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _5
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 285
+        width: 20
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bb3da13c99c964fbb5c778c5fcae3f
+      internalID: 1469021137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _6
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 281
+        width: 38
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74da84c0394c69d49bae5ede3eac6608
+      internalID: -143643010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _9
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 276
+        width: 55
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063684b75a19f6543b174381309e5da5
+      internalID: -1550948087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _10
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 285
+        width: 39
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff7a096d4f90cf47a6e2c174d4d5ad1
+      internalID: -544513471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 279
+        width: 39
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a673494586649dc479c079bdcf0b7a24
+      internalID: -994273171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _12
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 279
+        width: 33
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48a5abd62e94114c8dcf967b8652208
+      internalID: -135418451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _15
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 284
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4167b18ac27d456409b35c9df1d8d0ac
+      internalID: 1443719079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _16
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 275
+        width: 35
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acc85efd00d0d84a9e0333a2ad480e3
+      internalID: 1439726682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _17
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 284
+        width: 26
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2824d8274a23741a5863faf455045e
+      internalID: -909868570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _28
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 221
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22eae1663ae0a24419acf06bbaf6fcd0
+      internalID: 996785647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _29
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 221
+        width: 33
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c438c722798fe51439fe943f17019c0a
+      internalID: -1657864099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _30
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 221
+        width: 47
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751817b214f54604d8ba6c832e91e360
+      internalID: 344746241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _33
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 221
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c439831a4e03dc841893c09686bb5905
+      internalID: -192302483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _35
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 212
+        width: 44
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095f29e852311864c9c6fd82cf0f03cb
+      internalID: 1305538421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _37
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 221
+        width: 20
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96095628f5acfa84ab4515f264c5df2f
+      internalID: -326200546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _38
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 220
+        width: 32
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8208bfbbcc9c4a4aaf271998bd19b4a
+      internalID: -1792364120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _40
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 220
+        width: 34
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177966e8bf4e36641b104766c35943cb
+      internalID: -1359399665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _44
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 221
+        width: 37
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5821c7266b1cca644b964a235282e7df
+      internalID: 1786231062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _45
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 212
+        width: 38
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbbb98d431eee54ab0c67b9498687c2
+      internalID: 615594352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _47
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 216
+        width: 30
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1e916ec295a624899ba24e381569d0
+      internalID: 1720297097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _49
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 221
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7192beb12aeba4e8afe2339f7d1f65
+      internalID: -1612147649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _50
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 148
+        width: 44
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80624ae7fb38e7499887f9e640afe22
+      internalID: -1538826622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _54
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 157
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170de18f965f8914eaf34b5b704d28e4
+      internalID: -268272155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _56
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 157
+        width: 47
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85986d50ec99fbb479d2c61f7931e190
+      internalID: -1274757502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _57
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 157
+        width: 33
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588c68b7b17c9f049820ea42ed57129e
+      internalID: -188457471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _58
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 157
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db5d7c72596d1f41b192009fd2b39cd
+      internalID: 1711531093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _59
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 157
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83da9ad0655e914da90b8f8922ac722
+      internalID: 1165032721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _61
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 152
+        width: 30
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477c926564d9e6743a0c35a2096c64af
+      internalID: -499256875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _63
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 148
+        width: 38
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c57966fcf2a2141a5f5dbe0819a6dc
+      internalID: 2143585686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _64
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 157
+        width: 37
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3db90e4a9a55f4ca61aa42bf8da465
+      internalID: -1158788109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _68
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 156
+        width: 34
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2f56fe09af24a45ad78f4b003b45c9
+      internalID: 1326569912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _70
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 156
+        width: 32
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa42f6a8fd48e074597622aa42b72b02
+      internalID: -444614664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _71
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 157
+        width: 20
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50d5100b5b1491408dbb5727ad0e060
+      internalID: 1417306479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _72
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 93
+        width: 22
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692f465f31f87da4fa9d68e995acc022
+      internalID: -635969257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _73
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 94
+        width: 33
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc7cdfa9d5ee614381b8878cb77a541
+      internalID: 776862382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _74
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 92
+        width: 35
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e70099fb26919489431f897b773576
+      internalID: 927407928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _75
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 92
+        width: 30
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f224708b8d2904e87e57454c3730cf
+      internalID: -1840511542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _76
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 92
+        width: 28
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af61999973e36048b6f18f5431360a2
+      internalID: -1961413367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _77
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 92
+        width: 35
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1a0740768c0cf42b20632a700f9b70
+      internalID: -42114219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _79
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 93
+        width: 36
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21db9baafec4f314e820f59e6e1f9c8e
+      internalID: -1885830555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _80
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 93
+        width: 28
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c453e53af90b8a4fb07275bf5ff235a
+      internalID: -31479894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _81
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 92
+        width: 27
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fe9388c6c66734bb55b8e139f626e0
+      internalID: 94766998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _82
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 92
+        width: 26
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50690dc11231d94a854cbdc47e3d0a5
+      internalID: -1578035080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _84
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 92
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0698abbddaa395f45aab3040de42d18c
+      internalID: -181222223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _85
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 92
+        width: 30
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1f5a7194c0f5b49be5e8cdaa033dcd
+      internalID: -111819281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _92
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 30
+        width: 37
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c6f57314ce28f46ba210fbd0b804e0
+      internalID: 418373425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _94
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 30
+        width: 35
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703dfdf48d9d80746841cf63abe2964e
+      internalID: -806316649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet-001attack _95
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 30
+        width: 24
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c02c76b91699df4e85b51917e0da234
+      internalID: 1893662696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b9d66db6b1f90f542879da14ada3df9a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spritesheet-001attack _0: -233917712
+      Spritesheet-001attack _1: -834960871
+      Spritesheet-001attack _10: -544513471
+      Spritesheet-001attack _11: -994273171
+      Spritesheet-001attack _12: -135418451
+      Spritesheet-001attack _13: 1950379267
+      Spritesheet-001attack _14: -1150124144
+      Spritesheet-001attack _15: 1443719079
+      Spritesheet-001attack _16: 1439726682
+      Spritesheet-001attack _17: -909868570
+      Spritesheet-001attack _18: -508886678
+      Spritesheet-001attack _19: 897568591
+      Spritesheet-001attack _2: -457786684
+      Spritesheet-001attack _20: 2068048241
+      Spritesheet-001attack _21: 150903832
+      Spritesheet-001attack _22: 145605196
+      Spritesheet-001attack _23: 844450124
+      Spritesheet-001attack _24: 345803088
+      Spritesheet-001attack _25: 121119375
+      Spritesheet-001attack _26: -1249949161
+      Spritesheet-001attack _27: -1656453980
+      Spritesheet-001attack _28: 996785647
+      Spritesheet-001attack _29: -1657864099
+      Spritesheet-001attack _3: -204213448
+      Spritesheet-001attack _30: 344746241
+      Spritesheet-001attack _31: 132453293
+      Spritesheet-001attack _32: -1876868386
+      Spritesheet-001attack _33: -192302483
+      Spritesheet-001attack _34: 1954435199
+      Spritesheet-001attack _35: 1305538421
+      Spritesheet-001attack _36: 1253203731
+      Spritesheet-001attack _37: -326200546
+      Spritesheet-001attack _38: -1792364120
+      Spritesheet-001attack _39: -1382682403
+      Spritesheet-001attack _4: -66677652
+      Spritesheet-001attack _40: -1359399665
+      Spritesheet-001attack _41: -2005522879
+      Spritesheet-001attack _42: 387435125
+      Spritesheet-001attack _43: 2080754219
+      Spritesheet-001attack _44: 1786231062
+      Spritesheet-001attack _45: 615594352
+      Spritesheet-001attack _46: 1632007636
+      Spritesheet-001attack _47: 1720297097
+      Spritesheet-001attack _48: 1229174529
+      Spritesheet-001attack _49: -1612147649
+      Spritesheet-001attack _5: 1469021137
+      Spritesheet-001attack _50: -1538826622
+      Spritesheet-001attack _51: -602019471
+      Spritesheet-001attack _52: -1616428521
+      Spritesheet-001attack _53: -839416295
+      Spritesheet-001attack _54: -268272155
+      Spritesheet-001attack _55: 1548654119
+      Spritesheet-001attack _56: -1274757502
+      Spritesheet-001attack _57: -188457471
+      Spritesheet-001attack _58: 1711531093
+      Spritesheet-001attack _59: 1165032721
+      Spritesheet-001attack _6: -143643010
+      Spritesheet-001attack _60: -1004623549
+      Spritesheet-001attack _61: -499256875
+      Spritesheet-001attack _62: 522603880
+      Spritesheet-001attack _63: 2143585686
+      Spritesheet-001attack _64: -1158788109
+      Spritesheet-001attack _65: -19818966
+      Spritesheet-001attack _66: -1385076886
+      Spritesheet-001attack _67: -536480359
+      Spritesheet-001attack _68: 1326569912
+      Spritesheet-001attack _69: -1550843040
+      Spritesheet-001attack _7: -1625177747
+      Spritesheet-001attack _70: -444614664
+      Spritesheet-001attack _71: 1417306479
+      Spritesheet-001attack _72: -635969257
+      Spritesheet-001attack _73: 776862382
+      Spritesheet-001attack _74: 927407928
+      Spritesheet-001attack _75: -1840511542
+      Spritesheet-001attack _76: -1961413367
+      Spritesheet-001attack _77: -42114219
+      Spritesheet-001attack _78: 373171289
+      Spritesheet-001attack _79: -1885830555
+      Spritesheet-001attack _8: 949943105
+      Spritesheet-001attack _80: -31479894
+      Spritesheet-001attack _81: 94766998
+      Spritesheet-001attack _82: -1578035080
+      Spritesheet-001attack _83: -1979824436
+      Spritesheet-001attack _84: -181222223
+      Spritesheet-001attack _85: -111819281
+      Spritesheet-001attack _86: 376507123
+      Spritesheet-001attack _87: 1927774315
+      Spritesheet-001attack _88: 1585773948
+      Spritesheet-001attack _89: -1034759572
+      Spritesheet-001attack _9: -1550948087
+      Spritesheet-001attack _90: -1460969292
+      Spritesheet-001attack _91: 1650739473
+      Spritesheet-001attack _92: 418373425
+      Spritesheet-001attack _93: -194084084
+      Spritesheet-001attack _94: -806316649
+      Spritesheet-001attack _95: 1893662696
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

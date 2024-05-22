@@ -13,20 +13,20 @@ public class ActiveWeapon : MonoBehaviour
 		Instance = this;
 	}
 
-	public void Update()
+/* 	public void Update()
 	{
 		if (!PauseManager.isMenuPaused)
 		{
 		FollowMousePosition();	
 		}
-	}
+	} */
 	public Sword GetActiveWeapon()
 	{
 		return sword;
 	}
 
 
-	private void FollowMousePosition()
+/* 	private void FollowMousePosition()
 	{
 		Vector3 mousePos = GameInput.Instance.GetMousePosition();
 		Vector3 playerPosition = Player.Instance.GetPlayerScreenPosition();
@@ -40,5 +40,5 @@ public class ActiveWeapon : MonoBehaviour
 			transform.rotation = Quaternion.Euler(0, 0, 0);
 			
 		}
-	}
+	} */
 }

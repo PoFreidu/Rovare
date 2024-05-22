@@ -15,12 +15,12 @@ public class Sword : MonoBehaviour
 	{
 		_polygonCollider2D = GetComponent<PolygonCollider2D>();
 	}
-
+	
 	private void Start()
 	{
 		AttackColliderTurnOff();
 	}
-
+	
 	public void Attack()
 	{
 		if (!PauseManager.isMenuPaused && _polygonCollider2D != null)

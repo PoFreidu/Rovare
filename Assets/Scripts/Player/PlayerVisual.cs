@@ -8,7 +8,7 @@ public class PlayerVisual : MonoBehaviour
 	private SpriteRenderer spriteRenderer;
 
 
-	private const string IS_RUNNING = "IsRunning";
+private const string IS_RUNNING = "IsRunning";
 
 	private void Awake()
 	{
@@ -16,15 +16,17 @@ public class PlayerVisual : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
-	private void Update()
+/* 	private void Update()
 	{
 		if (!PauseManager.isMenuPaused)
 		{
-		animator.SetBool(IS_RUNNING, Player.Instance.IsRunning());
-		AdjustPlayerFacingDirection();	
+			animator.SetBool(IS_RUNNING, Player.Instance.IsRunning());
+			AdjustPlayerFacingDirection();
 		}
-	}
-	private void AdjustPlayerFacingDirection()
+		
+	} */
+	
+/* 	private void AdjustPlayerFacingDirection()
 	{
 		Vector3 mousePos = GameInput.Instance.GetMousePosition();
 		Vector3 playerPosition = Player.Instance.GetPlayerScreenPosition();
@@ -37,5 +39,5 @@ public class PlayerVisual : MonoBehaviour
 		{
 			spriteRenderer.flipX = false;
 		}
-	}
+	} */
 }
