@@ -139,12 +139,12 @@ TextureImporter:
       name: Sprite-001deadportal_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 16
-        width: 20
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +160,12 @@ TextureImporter:
       name: Sprite-001deadportal_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 11
-        width: 24
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Sprite-001deadportal_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 8
-        width: 24
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Sprite-001deadportal_5
       rect:
         serializedVersion: 2
-        x: 209
-        y: 6
-        width: 30
-        height: 45
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: Sprite-001deadportal_7
       rect:
         serializedVersion: 2
-        x: 273
-        y: 6
-        width: 30
-        height: 45
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: Sprite-001deadportal_8
       rect:
         serializedVersion: 2
-        x: 338
-        y: 9
-        width: 28
-        height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: Sprite-001deadportal_9
       rect:
         serializedVersion: 2
-        x: 402
-        y: 9
-        width: 28
-        height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: Sprite-001deadportal_10
       rect:
         serializedVersion: 2
-        x: 466
-        y: 9
-        width: 28
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: Sprite-001deadportal_11
       rect:
         serializedVersion: 2
-        x: 529
-        y: 9
-        width: 29
-        height: 26
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: Sprite-001deadportal_12
       rect:
         serializedVersion: 2
-        x: 593
-        y: 9
-        width: 28
-        height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: Sprite-001deadportal_13
       rect:
         serializedVersion: 2
-        x: 659
-        y: 9
-        width: 26
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: Sprite-001deadportal_14
       rect:
         serializedVersion: 2
-        x: 721
-        y: 6
-        width: 30
-        height: 21
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,64 +388,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-001deadportal_18
+      name: Sprite-001deadportal_3
       rect:
         serializedVersion: 2
-        x: 853
-        y: 8
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37d01e554cece0f43a034a90ec836323
-      internalID: -518009206
+      spriteID: ca19f88eaa1200942964b62abd4f67c0
+      internalID: 1099981463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-001deadportal_24
+      name: Sprite-001deadportal_4
       rect:
         serializedVersion: 2
-        x: 785
-        y: 6
-        width: 30
-        height: 21
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a30dbb94e9eb73489776d1bf175f8a8
-      internalID: 1176594558
+      spriteID: 9794c89a57d33d243a4346141db6d256
+      internalID: -12362726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-001deadportal_25
+      name: Sprite-001deadportal_6
       rect:
         serializedVersion: 2
-        x: 922
-        y: 11
-        width: 12
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c96c915f6d8274c9d65b30333c0fa4
-      internalID: 243849485
+      spriteID: 0347b1e157a61e942b1029445ac04341
+      internalID: -499070984
       vertices: []
       indices: 
       edges: []
@@ -468,18 +468,7 @@ TextureImporter:
       Sprite-001deadportal_12: 1282450771
       Sprite-001deadportal_13: -770644151
       Sprite-001deadportal_14: 530641425
-      Sprite-001deadportal_15: 1773635745
-      Sprite-001deadportal_16: 39531843
-      Sprite-001deadportal_17: -858249366
-      Sprite-001deadportal_18: -518009206
-      Sprite-001deadportal_19: -6257499
       Sprite-001deadportal_2: -1443600952
-      Sprite-001deadportal_20: 2093075012
-      Sprite-001deadportal_21: -370291413
-      Sprite-001deadportal_22: -996171039
-      Sprite-001deadportal_23: -1999696137
-      Sprite-001deadportal_24: 1176594558
-      Sprite-001deadportal_25: 243849485
       Sprite-001deadportal_3: 1099981463
       Sprite-001deadportal_4: -12362726
       Sprite-001deadportal_5: 902322007

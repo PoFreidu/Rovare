@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveWeapon : MonoBehaviour
+public class ActiveWeapon : Singleton<ActiveWeapon>
 {
-	public static ActiveWeapon Instance { get; private set; }
+/* 	public static ActiveWeapon Instance { get; private set; } */
 
 	[SerializeField] private Sword sword;
 
-	private void Awake()
+	protected override void Awake()
 	{
-		Instance = this;
+		base.Awake();
+		
+/* 		Instance = this; */
 	}
 
 /* 	public void Update()

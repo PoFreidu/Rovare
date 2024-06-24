@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
+	public static Sword Instance { get; private set; }
+	
+	[SerializeField] private AudioSource missAttack;
+	[SerializeField] private AudioSource successAttack;
 	[SerializeField] private int _damageAmount = 5;
 
 	public event EventHandler OnSwordAttack;
@@ -13,6 +17,8 @@ public class Sword : MonoBehaviour
 
 	private void Awake()
 	{
+/* 		base.Awake(); */
+		Instance = this;
 		_polygonCollider2D = GetComponent<PolygonCollider2D>();
 	}
 	
@@ -26,7 +32,8 @@ public class Sword : MonoBehaviour
 		if (!PauseManager.isMenuPaused && _polygonCollider2D != null)
 		{
 		AttackColliderTurnOffOn();
-		
+		successAttack.Play();
+		/* missAttack.Play(); */
 		OnSwordAttack?.Invoke(this, EventArgs.Empty);	
 		}
 	}

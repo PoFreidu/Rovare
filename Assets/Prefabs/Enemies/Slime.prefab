@@ -229,9 +229,10 @@ GameObject:
   - component: {fileID: 6988198177257453362}
   - component: {fileID: 6892796150503370302}
   - component: {fileID: 9092804047355811964}
+  - component: {fileID: -4870585231212692478}
   m_Layer: 0
   m_Name: Slime
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,7 +413,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 0.1
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!114 &322424796111552739
 MonoBehaviour:
@@ -440,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9f53f4a825ab24da0c4d0c0a4c729b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingState: 1
+  startingState: 0
   roamingDistanceMax: 7
   roamingDistanceMin: 3
   roamingTimerMax: 7
@@ -471,3 +472,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: efc822b201191e24dbf47fcc8851705b, type: 2}
   restoreDefaultMatTime: 0.2
+--- !u!114 &-4870585231212692478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042864613233574957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57062826696a3494b8f470d189e3719b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 8496083699746245967, guid: 51051ef1efb9bfe4bbf18a6b235e9fa2, type: 3}
+  heartHealth: {fileID: 8496083699746245967, guid: 5a0970ea51f45604888dce353404ae57, type: 3}

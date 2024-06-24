@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
+/* 	public GameObject canvasUI; */
 	public GameObject pausePanel;
 	public static bool isMenuPaused = false;
-	
+/* 	private GameManager gameManager; */
+
 	private void Start()
 	{
 		pausePanel.SetActive(false);
+/* 		gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>(); */
+		
 	}
 	
 	void Update()
@@ -29,6 +33,8 @@ public class PauseManager : MonoBehaviour
 		if (isMenuPaused)
 		{
 			pausePanel.SetActive(true);
+/* 			canvasUI.SetActive(false); */
+			
 			Time.timeScale = 0f;
 			AudioListener.pause = true;
 		}
@@ -36,6 +42,8 @@ public class PauseManager : MonoBehaviour
 		else
 		{
 			pausePanel.SetActive(false);
+/* 			canvasUI.SetActive(true); */
+			
 			Time.timeScale = 1f;
 			AudioListener.pause = false;
 		}
@@ -48,14 +56,24 @@ public class PauseManager : MonoBehaviour
 	
 	public void Restart()
 	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		isMenuPaused = false;
+		
+		
+/* 		SceneManager.LoadScene("SampleScene"); */
+		PlayerHealth.Instance.ResetHealth();
+		EconomyManager.Instance.ResetCoins();
+		/* SceneManager.LoadScene("SampleScene"); */
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		
+/* 		gameManager.ResetGameStates(); */
+		
 	}
 	
 	public void Menu()
 	{
-		SceneManager.LoadScene("Menu");
 		isMenuPaused = false;
+		SceneManager.LoadScene("Menu");
+		
 	}	
 	
 	public void ExitGame()

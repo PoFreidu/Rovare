@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -10,43 +9,74 @@ public class MenuManager : MonoBehaviour
 	public GameObject settingsPanel;
 	public TMP_Dropdown resolutionDropdown;
 	public TMP_Dropdown qualityDropdown;
+	public Toggle fullScreenToggle;
 	
-	Resolution[] resolutions;
+	// Список поддерживаемых разрешений экрана
+	private List<Resolution> supportedResolutions;
 	
-	void Start ()
+	void Start()
+	{
+		supportedResolutions = new List<Resolution>
+		{
+			CreateResolution(1280, 720, 60),
+			CreateResolution(1920, 1080, 60),
+			CreateResolution(2560, 1440, 60),
+			CreateResolution(3840, 2160, 60),
+			// Добавьте другие желаемые разрешения здесь
+		};
+		
+		if (SceneManager.GetActiveScene().name == "Menu")
+		{
+			Destroy(GameObject.Find("Player"));
+			Destroy(GameObject.Find("UICanvas"));
+			Destroy(GameObject.Find("Managers"));
+		}
+		
+		PopulateResolutionDropdown();
+		LoadSettings();
+	}
+	
+	private Resolution CreateResolution(int width, int height, int refreshRate)
+	{
+    	var numerator = (uint)refreshRate * 1000000;
+    	var denominator = (uint)1000000; // Явное приведение типа int к uint
+    	var refreshRateRatio = new RefreshRate() { numerator = numerator, denominator = denominator };
+    	return new Resolution() { width = width, height = height, refreshRateRatio = refreshRateRatio };
+	}
+
+
+	void PopulateResolutionDropdown()
 	{
 		resolutionDropdown.ClearOptions();
 		List<string> options = new List<string>();
-		resolutions = Screen.resolutions;
-		int currentResolutionIndex = 0;
-		
-		for (int i = 0; i < resolutions.Length; i++)
+
+		foreach (var res in supportedResolutions)
 		{
-			string option = resolutions[i].width + "x" + resolutions[i].height + " " + resolutions[i].refreshRateRatio + "Hz";
+			string option = $"{res.width}x{res.height} {res.refreshRateRatio}Hz";
 			options.Add(option);
-			if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
-					currentResolutionIndex = i;
-		} 
-		
+		}
+
 		resolutionDropdown.AddOptions(options);
 		resolutionDropdown.RefreshShownValue();
-		LoadSettings(currentResolutionIndex);
 	}
-	
+
 	public void SetFullScreen(bool isFullScreen)
 	{
 		Screen.fullScreen = isFullScreen;
+		SaveSettings();
 	}
 	
 	public void SetResolution(int resolutionIndex)
 	{
-		Resolution resolution = resolutions[resolutionIndex];
+		Resolution resolution = supportedResolutions[resolutionIndex];
 		Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+		SaveSettings();
 	}
 	
 	public void SetQuality(int qualityIndex)
 	{
 		QualitySettings.SetQualityLevel(qualityIndex);
+		SaveSettings();
 	}
 	
 	public void PlayGame()
@@ -71,26 +101,33 @@ public class MenuManager : MonoBehaviour
 	
 	public void SaveSettings()
 	{
-		PlayerPrefs.SetInt("QualitySettingPreference", qualityDropdown.value);
-		PlayerPrefs.SetInt("ResolutionPreference", resolutionDropdown.value);
-		PlayerPrefs.SetInt("FullScreenPreference", System.Convert.ToInt32(Screen.fullScreen));
-	}
-	
-	public void LoadSettings(int currentResolutionIndex)
-	{
-		if (PlayerPrefs.HasKey("QualitySettingPreference"))
-			qualityDropdown.value = PlayerPrefs.GetInt("QualitySettingPreference");
-		else
-			qualityDropdown.value = 3;
-			
-		if (PlayerPrefs.HasKey("ResolutionPreference"))
-			resolutionDropdown.value = PlayerPrefs.GetInt("ResolutionPreference");
-		else 
-			resolutionDropdown.value = currentResolutionIndex;
+		int qualityIndex = qualityDropdown.value;
+		int resolutionIndex = resolutionDropdown.value;
+		bool isFullScreen = fullScreenToggle.isOn;
 		
-		if (PlayerPrefs.HasKey("FullScreenPreference"))
-			Screen.fullScreen = System.Convert.ToBoolean(PlayerPrefs.GetInt("FullScreenPreference"));
-		else 
-			Screen.fullScreen = true;
+		QualitySettings.SetQualityLevel(qualityIndex);
+		Resolution resolution = supportedResolutions[resolutionIndex];
+		Screen.SetResolution(resolution.width, resolution.height, isFullScreen);
+		Screen.fullScreen = isFullScreen;
+		
+		PlayerPrefs.SetInt("QualitySettingPreference", qualityIndex);
+		PlayerPrefs.SetInt("ResolutionPreference", resolutionIndex);
+		PlayerPrefs.SetInt("FullScreenPreference", isFullScreen ? 1 : 0);
+		PlayerPrefs.Save();
+	}
+
+	public void LoadSettings()
+	{
+		int qualityIndex = PlayerPrefs.GetInt("QualitySettingPreference", 3);
+		int resolutionIndex = PlayerPrefs.GetInt("ResolutionPreference", 0);
+		bool isFullScreen = PlayerPrefs.GetInt("FullScreenPreference", 1) == 1;
+		
+		resolutionDropdown.value = resolutionIndex;
+		qualityDropdown.value = qualityIndex;
+		fullScreenToggle.isOn = isFullScreen;
+		
+		SetQuality(qualityIndex);
+		SetResolution(resolutionIndex);
+		SetFullScreen(isFullScreen);
 	}
 }

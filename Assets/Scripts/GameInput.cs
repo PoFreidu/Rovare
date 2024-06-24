@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameInput : MonoBehaviour
 {
@@ -25,7 +26,11 @@ public class GameInput : MonoBehaviour
 
 	private void PlayerAttack_started(InputAction.CallbackContext obj)
 	{
-		OnPlayerAttack?.Invoke(this, EventArgs.Empty);
+		if(SceneManager.GetActiveScene().name != "Menu")
+		{
+			OnPlayerAttack?.Invoke(this, EventArgs.Empty);
+		}
+		
 	}
 
 	public Vector2 GetMovementVector()

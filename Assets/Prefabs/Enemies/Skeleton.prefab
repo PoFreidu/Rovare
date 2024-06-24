@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 7167812892061394466}
   - component: {fileID: 39265560039661658}
   - component: {fileID: 8738787189118538307}
+  - component: {fileID: 3308517308795684987}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -421,7 +422,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 0.1
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!114 &8480304712392906510
 MonoBehaviour:
@@ -480,3 +481,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: efc822b201191e24dbf47fcc8851705b, type: 2}
   restoreDefaultMatTime: 0.2
+--- !u!114 &3308517308795684987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372059747024681275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57062826696a3494b8f470d189e3719b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 8496083699746245967, guid: 51051ef1efb9bfe4bbf18a6b235e9fa2, type: 3}
+  heartHealth: {fileID: 8496083699746245967, guid: 5a0970ea51f45604888dce353404ae57, type: 3}

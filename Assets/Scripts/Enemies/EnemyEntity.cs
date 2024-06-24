@@ -20,12 +20,18 @@ public class EnemyEntity : MonoBehaviour
 	{
 		_currentHealth = _maxHealth;
 	}
-
+	
 	public void TakeDamage(int damage)
 	{
 		_currentHealth -= damage;
 		knockback.GetKnockedBack(Player.Instance.transform, 15f);
 		StartCoroutine(flash.FlashRoutine());
+		StartCoroutine(CheckDetectDeathRoutine());
+	}
+	
+	private IEnumerator CheckDetectDeathRoutine() 
+	{
+		yield return new WaitForSeconds(flash.GetRestoreMatTime());
 		DetectDeath();
 	}
 
@@ -33,7 +39,9 @@ public class EnemyEntity : MonoBehaviour
 	{
 		if (_currentHealth <=0)
 		{
-			Instantiate(_deathVFXPrefab, transform.position, Quaternion.identity);
+			GameObject deathVFXInstance = Instantiate(_deathVFXPrefab, transform.position, Quaternion.identity);
+			Destroy(deathVFXInstance, 1);
+			GetComponent<PickUpSpawner>().DropItems();
 			Destroy(gameObject);
 		}
 	}
