@@ -21451,7 +21451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b839b06cad6ed45b4748df8843fca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: SampleScene2
+  sceneToLoad: SampleScene1
   sceneTransitionName: WEntry
 --- !u!4 &7409331030918379059 stripped
 Transform:

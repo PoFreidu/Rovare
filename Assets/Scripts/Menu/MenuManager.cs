@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,9 +8,11 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
 	public GameObject settingsPanel;
+	public GameObject loadingScreen;
 	public TMP_Dropdown resolutionDropdown;
 	public TMP_Dropdown qualityDropdown;
 	public Toggle fullScreenToggle;
+	public Slider progressLoading;
 	
 	// Список поддерживаемых разрешений экрана
 	private List<Resolution> supportedResolutions;
@@ -38,10 +41,10 @@ public class MenuManager : MonoBehaviour
 	
 	private Resolution CreateResolution(int width, int height, int refreshRate)
 	{
-    	var numerator = (uint)refreshRate * 1000000;
-    	var denominator = (uint)1000000; // Явное приведение типа int к uint
-    	var refreshRateRatio = new RefreshRate() { numerator = numerator, denominator = denominator };
-    	return new Resolution() { width = width, height = height, refreshRateRatio = refreshRateRatio };
+		var numerator = (uint)refreshRate * 1000000;
+		var denominator = (uint)1000000; // Явное приведение типа int к uint
+		var refreshRateRatio = new RefreshRate() { numerator = numerator, denominator = denominator };
+		return new Resolution() { width = width, height = height, refreshRateRatio = refreshRateRatio };
 	}
 
 
@@ -81,7 +84,8 @@ public class MenuManager : MonoBehaviour
 	
 	public void PlayGame()
 	{
-		SceneManager.LoadScene("SampleScene");
+		/* SceneManager.LoadScene("SampleScene"); */
+		Loading();
 	}
 	
 	public void ExitGame()
@@ -98,6 +102,38 @@ public class MenuManager : MonoBehaviour
 	{
 		settingsPanel.SetActive(false);
 	}
+	
+ 	public void Loading()
+	{
+		loadingScreen.SetActive(true);
+		
+		StartCoroutine(LoadAsync());
+	}
+	
+IEnumerator LoadAsync()
+{
+    AsyncOperation loadAsync = SceneManager.LoadSceneAsync("SampleScene");
+    loadAsync.allowSceneActivation = false;
+
+    float artificialProgress = 0f;
+    float fillSpeed = 10f; // Скорость заполнения слайдера
+
+    while (!loadAsync.isDone)
+    {
+        // Искусственно увеличиваем прогресс
+        artificialProgress += fillSpeed * Time.deltaTime;
+        artificialProgress = Mathf.Clamp(artificialProgress, 0f, 100f);
+        progressLoading.value = artificialProgress;
+        Debug.Log($"Загрузка: {artificialProgress}%"); // Отладочное сообщение
+
+        // Проверяем, достиг ли искусственный прогресс 100% и реальный прогресс загрузки 0.9
+        if (artificialProgress >= 100f && loadAsync.progress >= 0.9f)
+        {
+            loadAsync.allowSceneActivation = true;
+        }
+        yield return null;
+    }
+}
 	
 	public void SaveSettings()
 	{
