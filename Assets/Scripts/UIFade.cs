@@ -7,17 +7,11 @@ using UnityEngine.UI;
 
 public class UIFade : Singleton<UIFade>
 {
-/* 	public static UIFade Instance { get; private set; } */
-	
 	[SerializeField] private Image fadeScreen;
 	[SerializeField] private float fadeSpeed = 1f;
 	
 	private IEnumerator fadeRoutine;
 	
-/* 	private void Awake()
-	{
-		Instance = this;
-	} */
 	public void FadeToBlack()
 	{
 		if (fadeRoutine != null) 

@@ -4,43 +4,15 @@ using UnityEngine;
 
 public class ActiveWeapon : Singleton<ActiveWeapon>
 {
-/* 	public static ActiveWeapon Instance { get; private set; } */
-
 	[SerializeField] private Sword sword;
 
 	protected override void Awake()
 	{
 		base.Awake();
-		
-/* 		Instance = this; */
 	}
 
-/* 	public void Update()
-	{
-		if (!PauseManager.isMenuPaused)
-		{
-		FollowMousePosition();	
-		}
-	} */
 	public Sword GetActiveWeapon()
 	{
 		return sword;
 	}
-
-
-/* 	private void FollowMousePosition()
-	{
-		Vector3 mousePos = GameInput.Instance.GetMousePosition();
-		Vector3 playerPosition = Player.Instance.GetPlayerScreenPosition();
-
-		if (mousePos.x < playerPosition.x)
-		{
-			transform.rotation = Quaternion.Euler(0,180,0);
-		}
-		else 
-		{
-			transform.rotation = Quaternion.Euler(0, 0, 0);
-			
-		}
-	} */
 }

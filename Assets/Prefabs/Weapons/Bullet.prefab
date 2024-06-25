@@ -168,3 +168,7 @@ MonoBehaviour:
   particleOnHitPrefabVFX: {fileID: 2948048360338672110, guid: b0ff770af0b84ca4580d2ddb2e46349c, type: 3}
   isEnemyProjectile: 1
   projectileRange: 30
+  damageAmount: 4
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 7

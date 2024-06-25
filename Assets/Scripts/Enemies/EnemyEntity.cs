@@ -26,14 +26,15 @@ public class EnemyEntity : MonoBehaviour
 		_currentHealth -= damage;
 		knockback.GetKnockedBack(Player.Instance.transform, 15f);
 		StartCoroutine(flash.FlashRoutine());
-		StartCoroutine(CheckDetectDeathRoutine());
+		DetectDeath();
+/* 		StartCoroutine(CheckDetectDeathRoutine()); */
 	}
 	
-	private IEnumerator CheckDetectDeathRoutine() 
+/* 	private IEnumerator CheckDetectDeathRoutine() 
 	{
 		yield return new WaitForSeconds(flash.GetRestoreMatTime());
 		DetectDeath();
-	}
+	} */
 
 	public void DetectDeath()
 	{

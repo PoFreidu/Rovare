@@ -445,6 +445,10 @@ MonoBehaviour:
   roamingDistanceMax: 7
   roamingDistanceMin: 3
   roamingTimerMax: 7
+  attackRange: 0
+  enemyAttackType: {fileID: 0}
+  attackCooldown: 2
+  stopMovingWhileAttacking: 0
 --- !u!114 &6892796150503370302
 MonoBehaviour:
   m_ObjectHideFlags: 0

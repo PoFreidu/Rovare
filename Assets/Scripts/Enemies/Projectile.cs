@@ -1,61 +1,91 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 22f;
-    [SerializeField] private GameObject particleOnHitPrefabVFX;
-    [SerializeField] private bool isEnemyProjectile = false;
-    [SerializeField] private float projectileRange = 10f;
-    [SerializeField] private int damageAmount = 4;
+	[SerializeField] private float moveSpeed = 22f;
+	[SerializeField] private GameObject particleOnHitPrefabVFX;
+	[SerializeField] private bool isEnemyProjectile = false;
+	[SerializeField] private float projectileRange = 10f;
+	[SerializeField] private int damageAmount = 4;
+	[SerializeField] private LayerMask hitLayers;
 
-    private Vector3 startPosition;
+	private Vector3 startPosition;
+	private Vector3 direction = Vector3.right; // Направление движения снаряда
 
-    private void Start() {
-        startPosition = transform.position;
-    }
+	private void Start() {
+		startPosition = transform.position;
+	}
 
-    private void Update()
-    {
-        MoveProjectile();
-        DetectFireDistance();
-    }
+	private void Update()
+	{
+		MoveProjectile();
+		DetectFireDistance();
+	}
 
-    public void UpdateProjectileRange(float projectileRange){
-        this.projectileRange = projectileRange;
-    }
+	public void UpdateProjectileRange(float newProjectileRange){
+		projectileRange = newProjectileRange;
+	}
 
-    public void UpdateMoveSpeed(float moveSpeed)
-    {
-        this.moveSpeed = moveSpeed;
-    }
+	public void UpdateMoveSpeed(float newMoveSpeed)
+	{
+		moveSpeed = newMoveSpeed;
+	}
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        EnemyEntity enemyEntity = other.gameObject.GetComponent<EnemyEntity>();
-        Indestructible indestructible = other.gameObject.GetComponent<Indestructible>();
-        PlayerHealth player = other.gameObject.GetComponent<PlayerHealth>();
+	private void OnTriggerEnter2D(Collider2D other) {
+		if ((hitLayers.value & (1 << other.gameObject.layer)) > 0) {
+			ProcessCollision(other);
+		}
+	}
 
-        if (!other.isTrigger && (enemyEntity || indestructible || player)) {
-            if ((player && isEnemyProjectile) || (enemyEntity && !isEnemyProjectile)) {
-                player?.TakeDamage(damageAmount, transform);
-                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
-                Destroy(gameObject);
-            } else if (!other.isTrigger && indestructible) {
-                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
-                Destroy(gameObject);
-            }
-        }
-    }
+	private void ProcessCollision(Collider2D other) 
+	{
+		// Проверяем, есть ли у объекта скрипт Indestructible
+		Indestructible indestructibleComponent = other.GetComponent<Indestructible>();
 
-    private void DetectFireDistance() {
-        if (Vector3.Distance(transform.position, startPosition) > projectileRange) {
-            Destroy(gameObject);
-        }
-    }
+		if (indestructibleComponent != null) 
+		{
+		// Обработка столкновения с неразрушаемым объектом
+		IndestructibleHit();
+		} 
+		
+		else if (other.gameObject.CompareTag("Enemy") && !isEnemyProjectile) 
+		{
+		// Обработка столкновения с врагом
+		EnemyHit(other);
+		}
+			
+		else if (other.gameObject.CompareTag("Player") && isEnemyProjectile) 
+		{
+		// Обработка столкновения с игроком
+		PlayerHit(other);
+		}
+	}
 
-    private void MoveProjectile()
-    {
-        transform.Translate(Vector3.right * Time.deltaTime * moveSpeed);
-    }
+	private void EnemyHit(Collider2D enemy) {
+		enemy.GetComponent<EnemyEntity>().TakeDamage(damageAmount);
+		Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+		Destroy(gameObject);
+	}
+
+	private void PlayerHit(Collider2D player) {
+		player.GetComponent<PlayerHealth>().TakeDamage(damageAmount, transform);
+		Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+		Destroy(gameObject);
+	}
+
+	private void IndestructibleHit() {
+		Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+		Destroy(gameObject);
+	}
+
+	private void DetectFireDistance() {
+		if (Vector3.Distance(transform.position, startPosition) > projectileRange) {
+			Destroy(gameObject);
+		}
+	}
+
+	private void MoveProjectile()
+	{
+		transform.Translate(direction * Time.deltaTime * moveSpeed);
+	}
 }

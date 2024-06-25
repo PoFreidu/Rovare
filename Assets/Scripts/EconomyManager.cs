@@ -1,57 +1,50 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class EconomyManager : Singleton<EconomyManager>
 {
-	private TMP_Text CoinText;
-	public int currentCoin = 0;
-	const string COIN_AMOUNT_TEXT = "CoinAmountText";
-	
-	protected override void Awake()
-	{
-		base.Awake();
-		ResetCoins();
-	}
+    private TMP_Text coinText;
+    public int currentCoin = 0;
+    const string COIN_AMOUNT_TEXT = "CoinAmountText";
 
-	public void UpdateCurrentGoldCoin()
-	{
-		currentCoin += 1;
-		UpdateCoinText(); 
-	}
+    protected override void Awake()
+    {
+        base.Awake();
+        ResetCoins();
+    }
 
-	public void ResetCoins()
-	{
-		currentCoin = 0;
-		UpdateCoinText();
-	}
+    private void Start()
+    {
+        coinText = GameObject.Find(COIN_AMOUNT_TEXT).GetComponent<TMP_Text>();
+    }
 
-	private void UpdateCoinText()
-	{
-		if (CoinText == null)
-		{
-			CoinText = GameObject.Find(COIN_AMOUNT_TEXT).GetComponent<TMP_Text>();
-		}
-		CoinText.text = currentCoin.ToString("D3");
-	}
-	
-	public void SpendCoins(int amount)
-	{
-		if (currentCoin >= amount)
-		{
-			currentCoin -= amount;
-			UpdateCoinText();
-		}
-	}
-/* 	public void UpdateCurrentGoldCoin() {
-		currentCoin += 1;
+    public void UpdateCurrentGoldCoin()
+    {
+        currentCoin += 1;
+        UpdateCoinText(); 
+    }
 
-		if (CoinText == null) {
-			CoinText = GameObject.Find(COIN_AMOUNT_TEXT).GetComponent<TMP_Text>();
-		}
+    public void ResetCoins()
+    {
+        currentCoin = 0;
+        UpdateCoinText();
+    }
 
-		CoinText.text = currentCoin.ToString("D3");
-	} */
+    private void UpdateCoinText()
+    {
+        if (coinText == null)
+        {
+            coinText = GameObject.Find(COIN_AMOUNT_TEXT).GetComponent<TMP_Text>();
+        }
+        coinText.text = currentCoin.ToString("D3");
+    }
+
+    public void SpendCoins(int amount)
+    {
+        if (currentCoin >= amount)
+        {
+            currentCoin -= amount;
+            UpdateCoinText();
+        }
+    }
 }

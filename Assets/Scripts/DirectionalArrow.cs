@@ -35,31 +35,6 @@ public class DirectionalArrow : MonoBehaviour
 		InitializeReferences();
 	}
 	
-	/* private void Awake()
-	{
-		// Поиск объекта персонажа по тегу "Player"
-		GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-		if (playerObject != null)
-		{
-			player = playerObject.transform;
-		}
-		else
-		{
-			Debug.LogError("Объект c тегом 'Player' не найден.");
-		}
-
-		// Поиск объекта стрелки по тегу "ArrowPointer"
-		GameObject arrowObject = GameObject.FindGameObjectWithTag("ArrowPointer");
-		if (arrowObject != null)
-		{
-			arrowPointer = arrowObject.GetComponent<RectTransform>();
-		}
-		else
-		{
-			Debug.LogError("Объект c тегом 'ArrowPointer' не найден.");
-		}
-	} */
-	
 	 private void InitializeReferences()
 	{
 		// Поиск объекта персонажа по тегу "Player"
@@ -68,55 +43,24 @@ public class DirectionalArrow : MonoBehaviour
 		{
 			player = playerObject.transform;
 		}
-/* 		else
-		{
-			Debug.LogError("Объект c тегом 'Player' не найден.");
-		} */
-
+		
 		// Поиск объекта стрелки по тегу "ArrowPointer"
 		GameObject arrowObject = GameObject.FindGameObjectWithTag("ArrowPointer");
 		if (arrowObject != null)
 		{
 			arrowPointer = arrowObject.GetComponent<RectTransform>();
 		}
-/* 		else
-		{
-			Debug.LogError("Объект c тегом 'ArrowPointer' не найден.");
-		} */
-
+		
 		// Поиск объекта выхода по тегу "Exit"
 		GameObject exitObject = GameObject.FindGameObjectWithTag("Exit");
 		if (exitObject != null)
 		{
 			exitArea = exitObject.transform;
 		}
-/* 		else
-		{
-			Debug.LogError("Объект c тегом 'Exit' не найден.");
-		} */
 	}
 	
-/* 	private void Start()
-	{
-		// Поиск объекта выхода по тегу "Exit"
-		GameObject exitObject = GameObject.FindGameObjectWithTag("Exit");
-		if (exitObject != null)
-		{
-			exitArea = exitObject.transform;
-		}
-		else
-		{
-			Debug.LogError("Объект c тегом 'Exit' не найден.");
-		}
-	} */
 	private void Update()
 	{
-/*  		if (player == null || exitArea == null || arrowPointer == null)
-		{
-			Debug.LogError("Один из объектов не инициализирован.");
-			return; // Выходим из Update, если что-то не инициализировано
-		} */
-
 		// Расстояние от игрока до выхода
 		float distance = Vector3.Distance(player.position, exitArea.position);
 

@@ -434,7 +434,7 @@ MonoBehaviour:
   roamingDistanceMin: 3
   roamingTimerMax: 7
   attackRange: 5
-  enemyType: {fileID: 8770305156314098762}
+  enemyAttackType: {fileID: 8770305156314098762}
   attackCooldown: 2
   stopMovingWhileAttacking: 1
 --- !u!114 &8682943910822627047
@@ -505,8 +505,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4832838182677296655, guid: 99cf44437e1ac2b4abd87f34c9155fe8, type: 3}
   bulletMoveSpeed: 8
   burstCount: 2
-  projectilesPerBurst: 1
-  angleSpread: 0
+  projectilesPerBurst: 2
+  angleSpread: 2
   startingDistance: 0.1
   timeBetweenBursts: 3
   restTime: 1
