@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81a0c4345d5e5549b7dbe95c5d76a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentCoin: 0
 --- !u!1 &2851376323818161318
 GameObject:
   m_ObjectHideFlags: 0
